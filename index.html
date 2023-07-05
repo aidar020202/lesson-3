@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+         crossorigin="anonymous">
 </head>
+<style>
+    #spinner
+    .spinner-border {
+        display: none !important;
+    }
+</style>
 <body>
-    <h4> git init</h4>
-    <h4> git add file name or  .</h4>
-    <h4> git commit -m naster </h4>
-    <h4> git branch -M master </h4>
-    <h4> git remote add origin https://username/repo_name
-    <h4></h4>
-    </h4>
+    <p class="input-group mx-auto" style="width: 400px;">
+
+        <input type="text" id="input" placeholder="search country" class="form-control">
+        <button id="btn" class="btn btn-outline-secondary">Search</button>
+    </p>
+
+    <div class="d-flex flex-wrap gap-2" id="country-list"></div>
+
+    <script src="app.js"></script>
 </body>
 </html>
